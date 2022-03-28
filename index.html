@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>My Library</h1>
+    <div class="main-container">
+        <div>
+            <button type="button" id="newBook" onclick="openForm()">Add New Book</button>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form id="newBookForm">
+                <h3>New Book Info</h3>
+                <div>
+                    <input required class="dataInput" id="title" type="text" name="title" placeholder="Title: ">
+                </div>
+                <div>
+                    <input required class="dataInput" type="text" id="author" name="author" placeholder="Author: ">
+                </div>
+                <div>
+                    <input required class="dataInput" type="number" id="pages" name="pages"
+                        placeholder="Number of pages: ">
+                </div>
+                <div class="readBox">
+                    <h4>Have you read this book?</h4>
+                    <label for="read">Yes</label>
+                    <input type="checkbox" id="read" name="read" value="yes">
+                </div>
+                <button type="button" id="addBtn" onclick="closeForm()">Add</button>
+                <button type=" button" id="cancel" onclick="closeForm()">X</button>
+            </form>
+        </div>
+    </div>
+    <div id="bookShelf">
+
+    </div>
+</body>
+
+<footer>
+    <a href="https://github.com/Hekimianz">Copyright © Aram Hekimian</a>
+</footer>
+
+</html>

@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mali', cursive;
+}
+
+body{
+    background-image: url(./paper.jpg);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    margin: 15px 0 20px 0;
+    font-size: 3.5em;
+    text-align:center;
+    color: #52aa8a;
+}
+ #newBook{
+     background-color: #C1F7E3;
+     border: 1px solid #52aa8a;
+     border-radius: 8px;;
+     cursor: pointer;
+     width: 9em;
+     height: 2.5em;
+     font-size: 1.1em;
+     
+ }
+
+ #newBook:hover{
+     background-color: #3A7861;
+     font-weight: 500;
+     font-size: 1.2em;
+     color: #C1F7E3
+ }
+
+ #cancel{
+     background-color: #C1F7E3;
+     border: none;
+     cursor: pointer;
+     font-weight: bolder;
+     font-size: 1.1em;
+     color: rgb(255, 0, 0);
+     position: relative;
+     bottom: 270px;
+     left: 96px;
+ }
+
+ #cancel:hover{
+     color: rgb(219, 5, 5);
+ }
+
+ #addBtn{
+     background-color: #C1F7E3;
+     color: #3A7861;
+     border: none;
+     cursor: pointer;
+     font-size: 1.1em;
+     font-weight: 500;
+ }
+
+ #addBtn:hover{
+     color:#234b3c;
+ }
+
+h4{
+    margin: 10px 0 5px 0;
+}
+
+.form-popup{
+   border: 1px solid black;
+   border-radius: 12px;
+   margin: 10px 0 0 0;
+   padding: 10px 10px 10px 10px;
+   background-color: #C1F7E3;
+   display: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   position: absolute;
+   bottom: 50%;
+   
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top: 15px;
+}
+
+.dataInput{
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+    height: 2em;
+}
+
+#read{
+    align-self: center;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+.readBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: 45%;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.book{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding-top: 16px;
+    font-weight: 500;
+    background-color:#f5e1cf;
+}
+
+.book span{
+    border-bottom: 1px dashed black;;
+}
+
+
+
+#bookShelf{
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    gap: 100px;
+    grid-auto-rows: 20vh;
+    justify-content: center;
+}
+
+.deleteBtn{
+    border: none;
+    background-color: #f5e1cf;
+    font-weight: bold;
+    font-size: 1.05em;
+    cursor: pointer;
+    margin-top: 60px;
+    color: #BA0404;
+}
+
+.deleteBtn:hover{
+font-size: 1.1em;
+color: #810202;
+}
+
+
