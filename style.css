@@ -1,102 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Mali', cursive;
 }
 
-body{
+body {
     background-image: url(./paper.jpg);
 }
 
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-h1{
+h1 {
     margin: 15px 0 20px 0;
     font-size: 3.5em;
-    text-align:center;
+    text-align: center;
     color: #52aa8a;
 }
- #newBook{
-     background-color: #C1F7E3;
-     border: 1px solid #52aa8a;
-     border-radius: 8px;;
-     cursor: pointer;
-     width: 9em;
-     height: 2.5em;
-     font-size: 1.1em;
-     
- }
 
- #newBook:hover{
-     background-color: #3A7861;
-     font-weight: 500;
-     font-size: 1.2em;
-     color: #C1F7E3
- }
+#newBook {
+    background-color: #C1F7E3;
+    border: 1px solid #52aa8a;
+    border-radius: 8px;
+    ;
+    cursor: pointer;
+    width: 9em;
+    height: 2.5em;
+    font-size: 1.1em;
 
- #cancel{
-     background-color: #C1F7E3;
-     border: none;
-     cursor: pointer;
-     font-weight: bolder;
-     font-size: 1.1em;
-     color: rgb(255, 0, 0);
-     position: relative;
-     bottom: 270px;
-     left: 96px;
- }
+}
 
- #cancel:hover{
-     color: rgb(219, 5, 5);
- }
+#newBook:hover {
+    background-color: #3A7861;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #C1F7E3;
+    border-color: #C1F7E3;
 
- #addBtn{
-     background-color: #C1F7E3;
-     color: #3A7861;
-     border: none;
-     cursor: pointer;
-     font-size: 1.1em;
-     font-weight: 500;
- }
+}
 
- #addBtn:hover{
-     color:#234b3c;
- }
+#cancel {
+    background-color: #C1F7E3;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: rgb(255, 0, 0);
+    position: relative;
+    bottom: 270px;
+    left: 96px;
+}
 
-h4{
+#cancel:hover {
+    color: rgb(219, 5, 5);
+}
+
+#addBtn {
+    background-color: #C1F7E3;
+    color: #3A7861;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#addBtn:hover {
+    color: #234b3c;
+}
+
+h4 {
     margin: 10px 0 5px 0;
 }
 
-.form-popup{
-   border: 1px solid black;
-   border-radius: 12px;
-   margin: 10px 0 0 0;
-   padding: 10px 10px 10px 10px;
-   background-color: #C1F7E3;
-   display: none;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   position: absolute;
-   bottom: 50%;
-   
+.form-popup {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 10px 0 0 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #C1F7E3;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    bottom: 50%;
+
 }
 
 
-form{
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
     top: 15px;
 }
 
-.dataInput{
+.dataInput {
     margin-bottom: 10px;
     padding-left: 5px;
     border-radius: 12px;
@@ -104,22 +108,22 @@ form{
     height: 2em;
 }
 
-#read{
+#read {
     align-self: center;
 }
 
-h3{
+h3 {
     margin-bottom: 10px;
 }
 
-.readBox{
+.readBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     text-align: center;
@@ -128,12 +132,12 @@ footer{
     font-weight: 500;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.book{
+.book {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     border-radius: 12px;
     display: flex;
@@ -143,16 +147,17 @@ a{
     gap: 8px;
     padding-top: 16px;
     font-weight: 500;
-    background-color:#f5e1cf;
+    background-color: #f5e1cf;
 }
 
-.book span{
-    border-bottom: 1px dashed black;;
+.book span {
+    border-bottom: 1px dashed black;
+    ;
 }
 
 
 
-#bookShelf{
+#bookShelf {
     margin: 50px 0 0 0;
     display: grid;
     grid-template-columns: repeat(3, 10vw);
@@ -161,19 +166,19 @@ a{
     justify-content: center;
 }
 
-.deleteBtn{
-    border: none;
+.deleteBtn {
     background-color: #f5e1cf;
-    font-weight: bold;
-    font-size: 1.05em;
+    border: none;
+    color: #810202;
+    margin-top: 40px;
     cursor: pointer;
-    margin-top: 60px;
-    color: #BA0404;
+    padding: 10px 10px;
+    height: 2.5em;
+    font-size: 1.1em;
 }
 
-.deleteBtn:hover{
-font-size: 1.1em;
-color: #810202;
+.deleteBtn:hover {
+    font-weight: 500;
+
+    color: #5c0101;
 }
-
-

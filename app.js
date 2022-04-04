@@ -25,33 +25,40 @@ function addBookToShelf() {
     let bookPages = document.createElement("span");
     let bookRead = document.createElement("span");
     let deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.classList.add("deleteBtn");
     bookTitle.textContent = myLibrary[myLibrary.length - 1]['title'];
     bookAuthor.textContent = myLibrary[myLibrary.length - 1]['author'];
     bookPages.textContent = myLibrary[myLibrary.length - 1]['pages'] + " pages.";
     bookRead.textContent = myLibrary[myLibrary.length - 1]['read'];
-    deleteBtn.textContent = "Delete";
-    deleteBtn.classList.add("deleteBtn");
-    deleteBtn.setAttribute("type", "button");
     addedBook.appendChild(bookTitle);
     addedBook.appendChild(bookAuthor);
     addedBook.appendChild(bookPages);
     addedBook.appendChild(bookRead);
     addedBook.appendChild(deleteBtn);
-    console.log(addedBook);
     bookShelf.appendChild(addedBook);
+    document.querySelectorAll(".deleteBtn").forEach(item => {
+        item.addEventListener("click", () => {
+            item.parentElement.remove();
+        })
+    })
+
     return addedBook;
 }
-
-
-
-
-
+let allBooks = document.getElementsByClassName("book");
 
 function addBookToLibrary() {
     let userTitle = document.getElementById("title").value;
     let userAuthor = document.getElementById("author").value;
     let userPages = document.getElementById("pages").value;
-    let userRead = document.getElementById("read").value;
+    let userRead = "";
+    let checkbox = document.querySelector("#read");
+    if (checkbox.checked) {
+        userRead = "Status: Read";
+    }
+    else {
+        userRead = "Status: Not Read";
+    }
     if (userTitle == "" | userAuthor == "" | userPages == "") {
         return;
     }
@@ -60,7 +67,6 @@ function addBookToLibrary() {
     myLibrary.push(userBook);
     document.getElementById("newBookForm").reset();
     addBookToShelf();
-    deleteBook();
     return userBook;
 }
 
@@ -77,7 +83,11 @@ let addBtn = document.getElementById("addBtn");
 if (addBtn) {
     addBtn.addEventListener("click", addBookToLibrary);
 }
-let deleteBtn = document.getElementsByClassName("deleteBtn");
+
+let form = document.querySelector("form");
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+})
 
 
 

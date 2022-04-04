@@ -20,6 +20,7 @@
     <div class="main-container">
         <div>
             <button type="button" id="newBook" onclick="openForm()">Add New Book</button>
+
         </div>
         <div class="form-popup" id="myForm">
             <form id="newBookForm">
@@ -36,14 +37,15 @@
                 </div>
                 <div class="readBox">
                     <h4>Have you read this book?</h4>
+                    <input type="checkbox" id="read" name="readCheck">
                     <label for="read">Yes</label>
-                    <input type="checkbox" id="read" name="read" value="yes">
                 </div>
                 <button type="button" id="addBtn" onclick="closeForm()">Add</button>
                 <button type=" button" id="cancel" onclick="closeForm()">X</button>
             </form>
         </div>
     </div>
+
     <div id="bookShelf">
 
     </div>
